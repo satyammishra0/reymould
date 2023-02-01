@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+/* Smoooth body scrolling  */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-padding: 5%;
+  --black: #000;
+  --white: #fff;
+  --border-radius: 15px;
+  --primary-color: #377ef9;
+  --secondary-color: #1e266d;
+  --primary-text-color: #445781;
+  --secondary-text-color: #696969;
+  --transparent-blue-bg: #377ef912;
+  --simple-transition: all 0.5s ease;
+}
+
+body {
+  font-size: 16px;
+}
