@@ -408,3 +408,83 @@
   font-size: 25px;
   color: var(--secondary-color);
 }
+
+/* -------------------------- */
+/*  Media Query for mobile    */
+/* -------------------------- */
+
+@media screen and (max-width: 600px) {
+  .nav-list.utility_flex-center-between {
+    display: none;
+  }
+
+  .banner-content {
+    width: 100%;
+    top: 35%;
+  }
+
+  .banner-content > h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .section-services-heading > h2 {
+    font-size: 28px;
+  }
+
+  .section-services-grid.utility_grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+
+  .services-card-container-1 {
+    padding-top: 5%;
+  }
+
+  .section-services-card-parent.utility_grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  .services-card {
+    margin-bottom: 5%;
+  }
+
+  .section-services-grid-2 {
+    padding: 5% 0;
+  }
+
+  .section-about-grid.utility_grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  .section-about-grid-1 > h4 {
+    margin: 5% 0;
+  }
+  .section-about-grid-1 > p {
+    margin: 5% 0;
+  }
+
+  .service-1-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  .cta-grid {
+    width: 100%;
+    height: max-content;
+  }
+  .cta-grid.utility_flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-grid > h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .section-contact.utility_grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
