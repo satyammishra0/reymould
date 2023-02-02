@@ -60,6 +60,28 @@
   box-shadow: 0 15px 35px #377ef926;
   border: none;
   outline: none;
+  overflow: hidden;
+  position: relative;
+  line-height: 2.8;
+  transition: all 0.5s linear;
+}
+
+.utility_basic-button::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  width: 0;
+  border-radius: 6px;
+  padding: 0 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 15px 35px #377ef926;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.utility_basic-button:hover::before {
+  width: 100%;
 }
 
 .utility_basic-button > a {
