@@ -30,7 +30,7 @@
 .banner-section {
   background-image: url("../images/consulting1.jpg");
   border-radius: 40px;
-  height: 100vh;
+  height: 85vh;
   position: relative;
   padding: 0 2%;
 }
@@ -51,6 +51,19 @@
   font-size: 20px;
   margin: 4% 0 10% 0;
   color: vaR(--primary-text-color);
+}
+
+.banner-content > a[data-value="started"] {
+  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 15px 35px #377ef926;
+  border: none;
+  outline: none;
+  line-height: 2.8;
+  color: var(--white);
+  height: max-content;
+  width: max-content;
 }
 
 .down-arrow-circle {
@@ -486,5 +499,15 @@
 
   .section-contact.utility_grid-2 {
     grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  .contact-accordion {
+    margin-bottom: 5%;
+  }
+  .footer.utility_flex-center-between {
+    display: inline-block;
+  }
+  .social-icons.utility_flex-center {
+    justify-content: center;
   }
 }

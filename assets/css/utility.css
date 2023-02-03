@@ -64,10 +64,11 @@
   position: relative;
   line-height: 2.8;
   transition: all 0.5s linear;
+  color: var(--white);
 }
 
 .utility_basic-button::before {
-  content: "";
+  content: attr(data-value);
   position: absolute;
   top: 0;
   right: 0;
@@ -81,11 +82,16 @@
   border: none;
   outline: none;
   overflow: hidden;
-  transition: all 3s linear;
+  transition: all 0.8s linear;
+  z-index: 0;
 }
 
 .utility_basic-button:hover::before {
+  content: attr(data-value);
   width: 100%;
+  left: 0%;
+  color: vaR(--white);
+  background-color: var(--secondary-color);
 }
 
 .utility_basic-button > a {
@@ -94,9 +100,7 @@
   font-weight: 500;
   font-size: 15px;
 }
-.utility_basic-button:hover {
-  background-color: #9084fc;
-}
+
 .utility_padding {
   padding: var(--section-padding);
 }
@@ -125,4 +129,21 @@
   .utility_text {
     font-size: 16px;
   }
+}
+
+.new-btn {
+  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 15px 35px #377ef926;
+  border: none;
+  outline: none;
+  line-height: 2.8;
+  color: var(--white);
+  height: max-content;
+  width: max-content;
+}
+
+.new-btn > a {
+  color: var(--white);
 }
