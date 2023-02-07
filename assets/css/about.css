@@ -1,0 +1,356 @@
+/* -------------------------- */
+/* About Banner section */
+/* -------------------------- */
+.about-banner {
+  background-image: url("../images/about-bg.jpg");
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  z-index: 100;
+}
+
+.about-banner > h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 2%;
+}
+
+.about-banner > p {
+  font-size: 18px;
+  line-height: 30px;
+  width: 50%;
+  color: #fffc;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.about-banner > a > div {
+  border: 0.5px solid var(--white);
+  transition: bounce 0.5s linear infinite;
+}
+
+.about-banner > a > div > i {
+  color: var(--white);
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotateY("0");
+  }
+
+  30% {
+    transform: rotateY("-4px");
+  }
+
+  60% {
+    transform: rotateY("-8px");
+  }
+  100% {
+    transform: rotateY("0px");
+  }
+}
+
+/* -------------------------- */
+/* SVG Below Banner */
+/* -------------------------- */
+.banner-wave-svg {
+  height: 150px;
+  z-index: 0;
+  margin-top: -10%;
+  overflow: hidden;
+}
+
+.banner-wave-svg > svg {
+  overflow: hidden;
+  position: relative;
+  animation: MarqueeLeft linear 3s infinite;
+}
+
+@keyframes MarqueeLeft {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+/* -------------------------- */
+/* Our Qualities */
+/* -------------------------- */
+.our-qualities {
+  padding: var(--main-padding);
+}
+
+.our-qualities-content {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.our-qualities-content > p {
+  width: 60%;
+  font-size: 16px;
+  margin-top: 1.5%;
+}
+
+.our-qualities-card-container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
+  margin-top: 5%;
+}
+
+.our-qualities-card {
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 10px 35px rgb(38 42 76 / 10%);
+  padding: 10%;
+  text-align: center;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.our-qualities-card:hover {
+  transform: translateY(-5%);
+}
+
+.our-qualities-card > h3,
+.our-qualities-card > p {
+  margin: 8% 0;
+}
+
+.our-qualities-card > p {
+  font-size: 14px;
+}
+
+.our-qualities-card > i {
+  color: var(--primary-color);
+  font-size: 38px;
+}
+
+.our-qualities-card > a {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.card-bottom-line {
+  margin-top: 5%;
+  position: absolute;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.8s linear;
+  background-color: var(--primary-color);
+}
+
+/* -------------------------- */
+/* Our Expertise */
+/* -------------------------- */
+.our-expertise {
+  padding: 5%;
+  height: max-content;
+  background-color: #777af212;
+}
+
+.our-expertise-grid-img {
+  height: max-content;
+}
+
+.our-expertise-grid-img > img {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.expertise-percentage {
+  margin: 5% 0;
+}
+
+.expertise-percentage > label {
+  width: 100%;
+}
+
+.range-value {
+  margin-top: 2%;
+  height: 8px;
+  width: 80%;
+  border-radius: 6px;
+  background-color: var(--secondary-text-color);
+}
+
+.hundredPercent {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  height: 100%;
+  width: 80%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.hundredPercent::after {
+  content: "90%";
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  font-size: 14px;
+}
+
+.eightypercent {
+  width: 80%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  height: 100%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.eightypercent::after {
+  content: "80%";
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  font-size: 14px;
+}
+
+.nintyninepercent {
+  width: 99%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  height: 100%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.nintyninepercent::after {
+  content: "99%";
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  font-size: 14px;
+}
+
+/* -------------------------- */
+/* Our Team */
+/* -------------------------- */
+
+.our-team {
+  padding: var(--main-padding);
+}
+
+.team-member-grid {
+  margin-top: 5%;
+}
+
+.team-member {
+  background-image: url("../images/team3.jpg");
+  height: 55vh;
+  border-radius: 50%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.team-info {
+  position: absolute;
+  bottom: -100%;
+  background-color: #15151597;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.team-member:hover > .team-info {
+  bottom: 0;
+}
+
+.team-social-links > i {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.team-info > h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.team-info > p {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+/* -------------------------- */
+/* Our Expertise section 2 */
+/* -------------------------- */
+
+.our-expertise-grid > h2 {
+  margin-top: 5%;
+  width: 80%;
+}
+.our-expertise-grid > p {
+  margin: 5% 0;
+  width: 80%;
+}
+.our-expertise-grid > button {
+  cursor: pointer;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 600px) {
+  .our-qualities-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .our-expertise-grid {
+    margin-bottom: 5%;
+  }
+
+  .our-expertise-grid-container.utility_grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .range-value {
+    width: 100%;
+  }
+
+  .team-member-grid.utility_grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .team-member {
+    height: 45vh;
+    margin-bottom: 5%;
+  }
+
+  .our-expertise.utility_grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .our-expertise-grid-img > img {
+    width: 100%;
+  }
+
+  .our-expertise-grid > h2 {
+    width: 100%;
+  }
+  .our-expertise-grid > p {
+    width: 100%;
+  }
+}
