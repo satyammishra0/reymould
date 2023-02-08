@@ -1,0 +1,12 @@
+.about-banner {
+  background-image: url("../assets/images/faq-bg.png");
+}
+.section-contact {
+  border-bottom: 1px solid #000;
+}
+.contact-form {
+  text-align: left;
+  padding: 0%;
+  background-color: unset;
+  box-shadow: unset;
+}

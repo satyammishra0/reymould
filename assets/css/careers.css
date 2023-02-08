@@ -1,0 +1,142 @@
+/* -------------------------- */
+/*  Banner section */
+/* -------------------------- */
+
+.about-banner {
+  background-image: url("../images/career-bg.png");
+}
+
+/* -------------------------- */
+/*  Benefits we provide  */
+/* -------------------------- */
+
+.careers-benefits {
+  padding: var(--main-padding);
+}
+
+.careers-benefits > h2,
+.careers-benefits > p {
+  text-align: center;
+}
+
+.careers-benefits > p {
+  width: 70%;
+  margin: 1% auto;
+}
+
+/* facilities-grid */
+
+.facilities-grid {
+  margin-top: 5%;
+}
+
+.facilities {
+  grid-template-columns: 30% 1fr;
+  background-color: #f4f5fd;
+  padding: 10% 6%;
+  border-radius: 14px;
+  margin-bottom: 5%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.facilities:hover {
+  background-color: var(--primary-color);
+}
+.facilities:hover > .facilities-icon > i,
+.facilities:hover > .facilities-content > h3,
+.facilities:hover > .facilities-content > p {
+  color: var(--white);
+}
+
+.facilities-icon > i {
+  font-size: 45px;
+  color: var(--primary-color);
+}
+
+.facilities-content > h3 {
+  color: #39364e;
+  font-size: 22px;
+}
+
+.facilities-content > p {
+  margin-top: 5%;
+  font-size: 15px;
+  color: var(--secondary-text-color);
+}
+
+/* -------------------------- */
+/* Open Positions  */
+/* -------------------------- */
+
+.open-positions {
+  padding: var(--main-padding);
+}
+
+.open-positions > h2,
+.open-positions > p {
+  text-align: center;
+}
+
+.open-positions > p {
+  width: 70%;
+  margin: 1% auto;
+  margin-bottom: 5%;
+}
+
+.positions-cards {
+  padding: 10%;
+  background-color: #f7f7f7;
+  border: 0.5px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.positions-cards:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.positions-cards > i {
+  padding: 10px 15px;
+  background-color: #f3f2fb;
+  border-radius: 14px;
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.positions-cards > h3 {
+  margin: 14% 0;
+  color: #39364e;
+  font-size: 22px;
+}
+
+.positions-cards > p {
+  margin-bottom: 15%;
+  font-size: 16px;
+}
+
+.positions-cards > ul > li {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  margin: 6% 0;
+}
+
+.positions-cards > ul > li > i {
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.positions-cards > ul {
+  margin-bottom: 15%;
+}
+
+.positions-cards > a {
+  color: #acacac;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.positions-cards > a:hover {
+  color: var(--primary-color);
+}
