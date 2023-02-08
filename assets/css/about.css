@@ -310,6 +310,13 @@
 /* Media Query */
 
 @media screen and (max-width: 600px) {
+  .about-banner > h1 {
+    text-align: center;
+  }
+  .about-banner > p {
+    width: 80%;
+  }
+
   .our-qualities-card-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
