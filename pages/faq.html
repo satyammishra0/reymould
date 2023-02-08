@@ -11,7 +11,6 @@
     <!-- -------------------------- -->
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/about.css" />
-    <link rel="stylesheet" href="../assets/css/contact.css" />
     <link rel="stylesheet" href="../assets/css/global.css" />
     <link rel="stylesheet" href="../assets/css/utility.css" />
 
@@ -32,6 +31,21 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <style>
+      .about-banner {
+        background-image: url("../assets/images/faq-bg.png");
+      }
+      .section-contact {
+        border-bottom: 1px solid #000;
+      }
+      .contact-form {
+        text-align: left;
+        padding: 0%;
+        background-color: unset;
+        box-shadow: unset;
+      }
+    </style>
   </head>
 
   <body>
@@ -68,7 +82,7 @@
     <section
       class="about-banner contact-banner utility_background-property utility_flex-center"
     >
-      <h1 class="">We’d love to hear from you</h1>
+      <h1 class="">Frequently asked questions</h1>
       <p>
         We are a fully digital agency specializing in creating high-quality
         experiences that speak directly to your customers.
@@ -81,52 +95,16 @@
     </section>
 
     <!-- -------------------------- -->
-    <!-- Our Qualities -->
-    <!-- -------------------------- -->
-    <section class="our-qualities">
-      <div class="our-qualities-content utility_flex-center">
-        <h2 class="utility_main-heading">
-          We build digital brands and experiences
-        </h2>
-        <p class="utility_text">
-          We design, build and support websites and apps for clients worldwide.
-          We make your business stand out. Interested? Let's chat.
-        </p>
-      </div>
-
-      <div class="our-qualities-card-container utility_grid">
-        <div class="our-qualities-card">
-          <i class="bx bx-support"></i>
-          <h3>Contact Us</h3>
-          <p>We're an agency offering a full creative service.</p>
-          <a href="#">Learn More</a>
-          <div class="card-bottom-line"></div>
-        </div>
-        <div class="our-qualities-card">
-          <i class="bx bx-support"></i>
-          <h3>Contact Us</h3>
-          <p>We're an agency offering a full creative service.</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div class="our-qualities-card">
-          <i class="bx bx-support"></i>
-          <h3>Contact Us</h3>
-          <p>We're an agency offering a full creative service.</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div class="our-qualities-card">
-          <i class="bx bx-support"></i>
-          <h3>Contact Us</h3>
-          <p>We're an agency offering a full creative service.</p>
-          <a href="#">Learn More</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------- -->
     <!-- Section Contact Form -->
     <!-- -------------------------- -->
     <section class="section-contact utility_grid utility_grid-2">
+      <div class="contact-form">
+        <h3 class="utility_main-heading">General Questions</h3>
+        <p class="utility_text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore aliqua.
+        </p>
+      </div>
       <div class="contact-accordion utility_grid-center">
         <div class="container">
           <div class="accordion">
@@ -183,24 +161,137 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="section-contact utility_grid utility_grid-2">
       <div class="contact-form">
-        <h3>We'd love to talk about your project</h3>
+        <h3 class="utility_main-heading">Regular & Extended Licenses</h3>
         <p class="utility_text">
-          Our experts and developers would love to contribute their expertise
-          and insights to your potencial projects
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore aliqua.
         </p>
-        <form action="">
-          <input type="text" placeholder="Enter your Name" />
-          <input type="text" placeholder="Enter your Email" />
-          <textarea
-            name=""
-            placeholder="Enter your Message"
-            id=""
-            cols="30"
-            rows="10"
-          ></textarea>
-          <button class="new-btn">Submit</button>
-        </form>
+      </div>
+      <div class="contact-accordion utility_grid-center">
+        <div class="container">
+          <div class="accordion">
+            <div class="accordion-header">
+              <span>Title 1</span>
+              <button id="toggle-btn">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque facilis nulla sit quam. Repudiandae dolorem nobis sit
+                delectus iusto cumque corporis eum animi natus.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              <span>Title 1</span>
+              <button id="toggle-btn">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque facilis nulla sit quam. Repudiandae dolorem nobis sit
+                delectus iusto cumque corporis eum animi natus.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              <span>Title 1</span>
+              <button id="toggle-btn">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque facilis nulla sit quam. Repudiandae dolorem nobis sit
+                delectus iusto cumque corporis eum animi natus.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              <span>Title 1</span>
+              <button id="toggle-btn">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque facilis nulla sit quam. Repudiandae dolorem nobis sit
+                delectus iusto cumque corporis eum animi natus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact utility_grid utility_grid-2">
+      <div class="contact-form">
+        <h3 class="utility_main-heading">Regular & Extended Licenses</h3>
+        <p class="utility_text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore aliqua.
+        </p>
+      </div>
+      <div class="contact-accordion utility_grid-center">
+        <div class="container">
+          <div class="accordion">
+            <div class="accordion-header">
+              <span>Title 1</span>
+              <button id="toggle-btn">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque facilis nulla sit quam. Repudiandae dolorem nobis sit
+                delectus iusto cumque corporis eum animi natus.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              <span>Title 1</span>
+              <button id="toggle-btn">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque facilis nulla sit quam. Repudiandae dolorem nobis sit
+                delectus iusto cumque corporis eum animi natus.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              <span>Title 1</span>
+              <button id="toggle-btn">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque facilis nulla sit quam. Repudiandae dolorem nobis sit
+                delectus iusto cumque corporis eum animi natus.
+              </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion-header">
+              <span>Title 1</span>
+              <button id="toggle-btn">+</button>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque facilis nulla sit quam. Repudiandae dolorem nobis sit
+                delectus iusto cumque corporis eum animi natus.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- -------------------------- -->
