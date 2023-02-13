@@ -1,0 +1,22 @@
+.about-banner {
+  background-image: url("../images/services-bg.jpg");
+}
+
+/* -------------------------- */
+/* Services here  */
+/* -------------------------- */
+
+.section-services-list {
+  padding: 5% 0;
+}
+
+.section-services-list > h4,
+.section-services-list > p {
+  text-align: center;
+}
+
+.section-services-list > p {
+  margin: 2% auto;
+  width: 80%;
+  margin-bottom: 0;
+}
