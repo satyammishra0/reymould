@@ -15,7 +15,7 @@ body {
   left: 0;
   border-bottom: 0.4px solid var(--white);
   z-index: 1000;
-  background-color: var(--secondary-color);
+  background-color: var(--white);
 }
 
 .header-logo > a > img {
@@ -92,6 +92,10 @@ a:active {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
+
+  .active .nav-links > a {
+    color: var(--white);
   }
 
   .active .mobile-nav-icon[name="menu-sharp"] {
