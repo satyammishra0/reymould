@@ -19,6 +19,7 @@ const mobileNav = document.querySelector(".mobile-navbar-btn");
 const header = document.querySelector(".header");
 
 function toggleMobileNav() {
+  console.log("active ");
   header.classList.toggle("active");
 }
 
