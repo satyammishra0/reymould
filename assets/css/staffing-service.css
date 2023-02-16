@@ -1,0 +1,46 @@
+/* -------------------------- */
+/*  Form Css Starts here */
+/* -------------------------- */
+.form-container-section {
+  background-color: var(--light-purple-bg);
+  padding: 5%;
+}
+
+.form-container {
+  background-color: var(--white);
+  border-radius: 30px;
+  padding: 5% 10%;
+}
+
+.form-container > h2 {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.form-container > form > div {
+  margin: 2% 0;
+}
+
+label {
+  width: 100%;
+  font-size: 13px;
+  color: var(--secondary-text-color);
+}
+
+input,
+textarea {
+  margin-top: 1%;
+  background-color: #777af212;
+  padding: 4px 10px;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid var(--secondary-text-color);
+}
+
+::placeholder {
+  font-size: 13px;
+  color: var(--secondary-text-color);
+}
